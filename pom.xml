@@ -55,10 +55,7 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>-->
     </dependencies>
-    <profiles>
-        <profile>
-            <id>artifacts-nexus</id>
-            <distributionManagement>
+	<distributionManagement>
                 <repository>
                     <id>nexus</id>
                     <name>Releases</name>
@@ -69,9 +66,8 @@
                     <name>Snapshot</name>
                     <url>https://artifacts.neuw.tech/repository/maven-snapshots</url>
                 </snapshotRepository>
-            </distributionManagement>
-        </profile>
-    </profiles>
+    </distributionManagement>
+    
     <scm>
         <developerConnection>scm:git:https://github.com/krnbrs/devops-java-demo.git</developerConnection>
 		<tag>EQS-training-sample-app-0.1.7</tag>
