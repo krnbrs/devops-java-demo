@@ -55,16 +55,23 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>-->
     </dependencies>
-    <distributionManagement>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <url>http://artifacts.neuw.tech:8081/repository/maven-snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>nexus</id>
-            <url>http://artifacts.neuw.tech:8081/repository/maven-releases/</url>
-        </repository>
-    </distributionManagement>
+    <profiles>
+        <profile>
+            <id>artifacts-nexus</id>
+            <distributionManagement>
+                <repository>
+                    <id>nexus</id>
+                    <name>Releases</name>
+                    <url>https://artifacts.neuw.tech/repository/maven-releases</url>
+                </repository>
+                <snapshotRepository>
+                    <id>nexus</id>
+                    <name>Snapshot</name>
+                    <url>https://artifacts.neuw.tech/repository/maven-snapshots</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+    </profiles>
     <scm>
         <developerConnection>scm:git:https://github.com/rishikhuranasufi/jenkins-coaching</developerConnection>
 		<tag>EQS-training-sample-app-0.1.4</tag>
@@ -87,6 +94,11 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
             </plugin>
         </plugins>
     </build>
