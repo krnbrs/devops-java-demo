@@ -4,7 +4,7 @@
 
     <groupId>jenkins.coaching</groupId>
     <artifactId>EQS-training-sample-app</artifactId>
-    <version>0.1.8</version>
+    <version>0.1.9-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -74,7 +74,7 @@
     </profiles>
     <scm>
         <developerConnection>scm:git:https://github.com/krnbrs/devops-java-demo.git</developerConnection>
-		<tag>EQS-training-sample-app-0.1.8</tag>
+		<tag>EQS-training-sample-app-0.1.7</tag>
 	</scm>
     <build>
         <plugins>
