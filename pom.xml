@@ -4,7 +4,7 @@
 
     <groupId>jenkins.coaching</groupId>
     <artifactId>EQS-training-sample-app</artifactId>
-    <version>0.1.4</version>
+    <version>0.1.5-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
