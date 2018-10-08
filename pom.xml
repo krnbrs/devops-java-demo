@@ -80,7 +80,6 @@
     </profiles>
     <scm>
         <developerConnection>scm:git:https://github.com/krnbrs/devops-java-demo.git</developerConnection>
-      <tag>0.1.16-RELEASE</tag>
   </scm>
     <build>
         <plugins>
