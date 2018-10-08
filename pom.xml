@@ -39,6 +39,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -55,7 +61,10 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>-->
     </dependencies>
-	<distributionManagement>
+    <profiles>
+        <profile>
+            <id>artifacts-nexus</id>
+            <distributionManagement>
                 <repository>
                     <id>nexus</id>
                     <name>Releases</name>
@@ -66,12 +75,12 @@
                     <name>Snapshot</name>
                     <url>https://artifacts.neuw.tech/repository/maven-snapshots</url>
                 </snapshotRepository>
-    </distributionManagement>
-    
+            </distributionManagement>
+        </profile>
+    </profiles>
     <scm>
         <developerConnection>scm:git:https://github.com/krnbrs/devops-java-demo.git</developerConnection>
-		<tag>EQS-training-sample-app-0.1.7</tag>
-	</scm>
+    </scm>
     <build>
         <plugins>
             <plugin>
