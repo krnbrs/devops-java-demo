@@ -44,14 +44,14 @@
             <id>artifacts-nexus</id>
             <distributionManagement>
                 <repository>
-                    <id>nexus</id>
+                    <id>nexus-releases</id>
                     <name>Releases</name>
-                    <url>http://artifacts.neuw.tech:8081/repository/maven-releases</url>
+                    <url>https://artifacts.neuw.tech/repository/maven-releases</url>
                 </repository>
                 <snapshotRepository>
-                    <id>nexus</id>
+                    <id>nexus-snapshots</id>
                     <name>Snapshot</name>
-                    <url>http://artifacts.neuw.tech:8081/repository/maven-snapshots</url>
+                    <url>https://artifacts.neuw.tech/repository/maven-snapshots</url>
                 </snapshotRepository>
             </distributionManagement>
         </profile>
